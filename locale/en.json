@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Memory",
+    "description": "Saves durable notes across chats and loads workspace and global notes into every new session. Manage, search, and edit them in Settings → Memory."
+  }
+}
