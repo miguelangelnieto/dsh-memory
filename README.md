@@ -4,19 +4,22 @@ Durable notes that follow you across chats. Every new session receives a `Long-t
 
 ## Install
 
-Install this directory into a DeepSeek Harness profile:
+Add this directory as a profile bundle: **Plugins → Add plugin** in the app, or
+ask the agent to run the `plugin_manager` tool with `install_bundle` and this
+directory's absolute path.
 
-```sh
-dsh plugin --profile <profile> add /absolute/path/to/dsh-memory
-```
+Either route installs the package and selects the bundle. Installing the package
+alone with pnpm (`dsh plugin --profile <profile> add <dir>`) is not enough: the
+bundle must also be listed under `dsh.profile.bundles` in the profile's
+`package.json`, which is what the two routes above do.
 
-or directly from GitHub:
+The package deliberately keeps the local name `@local/dsh-memory`; rename it before
+publishing to a registry. It installs the row `dsh-memory`, so the feature can be
+disabled from Plugins without uninstalling the package.
 
-```sh
-dsh plugin --profile <profile> add github:miguelangelnieto/dsh-memory
-```
+Refresh the Web page once after installing so its client bundle is fetched.
 
-The package intentionally keeps the local name `@local/dsh-memory`; change the name before publishing it to a registry. It is plain JavaScript with no build step, and was tested with DeepSeek Harness 0.2.2-rc.2.
+It is plain JavaScript with no build step, and was tested with DeepSeek Harness 0.2.2-rc.2.
 
 ## Managing notes in the app
 
