@@ -2,6 +2,7 @@
   "name": "@local/dsh-memory",
   "version": "1.0.0",
   "private": true,
+  "license": "MIT",
   "description": "Durable cross-chat memory for DeepSeek Harness.",
   "type": "module",
   "main": "index.js",

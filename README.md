@@ -107,3 +107,7 @@ The Memory page manages notes, not plugin configuration. To change defaults, ove
 ## Turning it off
 
 Disable or remove the plugin in **Plugins**; the tools, prompt section, and **Settings → Memory** page disappear, and existing files stay on disk. Delete `~/.dsh/memory` (or the configured `directory`) to remove the notes themselves.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
